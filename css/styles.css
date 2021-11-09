@@ -708,6 +708,103 @@ button.contact3 {
   gap: 20px;
 }
 
+.contact-me {
+  padding: 50px;
+  margin-bottom: 200px;
+}
+
+.contact-me h2 {
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.contact-me > form > .contact-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  gap: 50px;
+}
+
+.contact-me > form > .contact-input > .contact-left h2  {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.contact-me > form > .contact-input > .contact-left > .message-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 5px;
+}
+
+.contact-me > form > .contact-input > .contact-left > .message-form label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.contact-me > form > .contact-input > .contact-left > .message-form textarea {
+  padding:  16px 20px;
+  border: 2px solid #e1e7f3;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.contact-me > form > .contact-input > .contact-left > .email-subs {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+    
+}
+
+.checkbox .checkmark-subs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 1px solid #e1e7f3;
+}
+
+.checkbox input:checked ~ .checkmark-subs {
+  background-color: #2196f3;
+  border-color: #00a8ee;
+}
+
+.checkbox input:checked ~ .checkmark-subs::after {
+  display: block;
+}
+
+.checkbox-container .checkmark-subs:after {
+border:1px solid white;
+border-width: 5 1px 1px 0px;
+left: 46px;
+top: 3px;
+width: 0px;
+height: 9px;
+}
+
+
+
 
 
 
