@@ -9,7 +9,7 @@
 
 body,html {
   /* background-color: #e1d9d5; */
-  overflow: auto;
+
 }
 
 br {
@@ -904,36 +904,91 @@ button.sub-button {
   margin-bottom: 100px;
 }
 
+/* SECTION FOOTER */
+
+.footer-container {
+  position: relative;
+  width: 98%;
+}
 
 
 
+.footer-container > .software-developer  {
 
+}
 
+@media only screen and (max-width: 767px) {
+.footer-container > .software-developer {
+    width: 90%;
+}}
 
+.footer-container > .software-developer {
+  position: absolute;
+  top: -154px;
+  left: 25px;
+  right: 0;
+  background: #00a8ee;
+  height: 290px;
+  box-shadow: 0 10px 10px rgb(0 0 0 / 20%);
+  border-radius: 10px;
+  padding: 40px;
+  color: white;
+}
 
+.footer-container > .software-developer > .text-developer {
+  text-align: center;
+}
 
+.footer-container > .software-developer > .text-developer h2 {
+  color: white;
+  margin-bottom: 31px;
+}
 
+.footer-container > .software-developer > .text-developer p {
+  font-size: 18px;
+  font-weight: 300;
+}
 
+.footer-container > .software-developer > .development {
+  margin-top: 15px;
+}
 
+.development-screen {
+  margin: 0 auto;
+  max-width: 510px;
+}
 
+.footer-container > .software-developer > .development {
+  display: flex;
+  gap: 50px;
+}
 
+.max-screen-development {
+  max-width: 510px;
+  margin: 0 auto;
+}
 
+.footer-container > .software-developer > .development form {
+  display: flex;
+  width: 100%;
+  gap: 40px;
+}
 
+.footer-container > .software-developer > .development input {
+  width: 100%;
+  background: #f4f7ff;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  padding: 10px 30px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.footer-container > .software-developer > .development button {
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background: transparent;
+  color: white;
+}
 
 /* @media all and (min-width: 1200px) {
   .container {
