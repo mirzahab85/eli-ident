@@ -708,6 +708,8 @@ button.contact3 {
   gap: 20px;
 }
 
+/* CONTACT */
+
 .contact-me {
   padding: 50px;
   margin-bottom: 200px;
@@ -782,26 +784,128 @@ button.contact3 {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  border: 1px solid #e1e7f3;
+  border: 1px solid white;
+}
+
+.checkbox:hover input ~ .checkmark-subs {
+  background-color: white;
 }
 
 .checkbox input:checked ~ .checkmark-subs {
   background-color: #2196f3;
-  border-color: #00a8ee;
+  border-color: lightblue;
 }
 
-.checkbox input:checked ~ .checkmark-subs::after {
+.checkbox .checkmark-subs:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox input:checked ~ .checkmark-subs:after {
   display: block;
 }
 
-.checkbox-container .checkmark-subs:after {
-border:1px solid white;
-border-width: 5 1px 1px 0px;
-left: 46px;
-top: 3px;
-width: 0px;
-height: 9px;
+.checkbox input:checked ~ .checkmark-subs:after {
+  background-color: #2196F3;
+  display: block;
 }
+
+.checkbox .checkmark-subs::after {
+  left: 7px;
+  top: 3px;
+  width: 3px;
+  height: 9px;
+  border: solid white;
+  border-width: 0px 1px 1px 0px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.contact-me > form > .contact-input > .contact-right > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-me > form > .contact-input > .contact-right {
+  display: grid;
+  grid-template-columns: repeat(1, 2fr);
+  grid-row-gap: 20px;
+  grid-column-gap: 310px;
+}
+
+.contact-me > form > .contact-input > .contact-right label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #808ca6;
+  
+}
+
+.contact-me > form > .contact-input > .contact-right input,
+.contact-me > form > .contact-input > .contact-left textarea,
+.contact-me > form > .contact-input > .contact-right select {
+  padding: 17px 30px;
+  border-radius: 8px;
+  border: 1.5px solid #e1e7f3;
+}
+
+.contact-me > form > .contact-input > .contact-right {
+  grid-column-end: 100px;
+}
+
+.contact-me > form > .contact-input > .contact-right > .dropdown-list select {
+  width: 100%;
+  -webkit-appearance: none;
+}
+
+.contact-me > form > .contact-input > .contact-right > .dropdown-list > div > .down-arrow {
+  width: 14px;
+  height: 52px;
+  position: absolute;
+  right: 60px;
+  color: red;
+}
+
+.contact-me > form > .contact-input {
+  margin-bottom: 60px;
+}
+
+.contact-me > form > .result > .submit {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact-me > form > .result button {
+  width: 210px;
+  
+}
+
+button.sub-button {
+  width: auto;
+  height: 55px;
+  font-size: 15px;
+  background: #00a8ee;
+  border-radius: 12px;
+  color: white;
+  border: none;
+}
+
+.contact-me > form > label {
+  padding: 10px;
+}
+
+.contact-me > form > .result > label {
+  margin-bottom: 100px;
+}
+
+
+
 
 
 
