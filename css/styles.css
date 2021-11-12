@@ -47,6 +47,10 @@ hr {
   border: 2px solid #f4f7ff;
 }
 
+.light-blue {
+  color: #00a8ee;
+}
+
 .contact1 {
   margin-top: 10px;
   background: transparent;
@@ -909,6 +913,7 @@ button.sub-button {
 .footer-container {
   position: relative;
   width: 98%;
+  background: #f4f7ff;
 }
 
 
@@ -989,6 +994,72 @@ button.sub-button {
   background: transparent;
   color: white;
 }
+
+.footer-container > .footer-menu {
+  height: auto;
+  padding-top: 240px;
+}
+
+.footer-container > .footer-menu > div {
+  display: flex;
+  flex-direction:  column;
+  flex-wrap: wrap;
+  padding: 0 50px 50px;
+}
+
+.footer-container > .footer-menu > div > .footer-address {
+  height: 100%;
+}
+
+.footer-container > .footer-menu > div > .footer-address > .footer-logo {
+  width: 120px;
+  margin-bottom: 25px;
+}
+
+.footer-container > .footer-menu > div > .footer-address > .footer-items {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.footer-container > .footer-menu > div > .footer-address > .footer-items label {
+  font-size: 16px;
+  color: #808ca6;
+}
+
+.footer-container > .footer-menu > div > .footer-address > .footer-items a {
+  text-decoration: none;
+}
+
+.footer-container > .footer-menu > div > .footer-links {
+  display: flex;
+  margin-top: 40px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-container > .footer-menu > div > .footer-links p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0a307c;
+}
+
+.footer-container > .footer-menu > div > .footer-links a {
+  text-decoration: none;
+  color: #808ca6;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* @media all and (min-width: 1200px) {
   .container {
