@@ -912,14 +912,8 @@ button.sub-button {
 
 .footer-container {
   position: relative;
-  width: 98%;
+  width: 100%;
   background: #f4f7ff;
-}
-
-
-
-.footer-container > .software-developer  {
-
 }
 
 @media only screen and (max-width: 767px) {
@@ -1051,6 +1045,40 @@ button.sub-button {
   color: #808ca6;
 }
 
+/* SOCIAL INFO */
+
+.footer-container > .social-info-about {
+  height: auto;
+  background: #e1e6f4;
+}
+
+.footer-container > .social-info-about > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  gap: 30px;
+}
+
+.footer-container > .social-info-about > div > .social-icons {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-container > .social-info-about > div > .social-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-container > .social-info-about > div > .social-text {
+  font-size: 5px;
+}
+
+.footer-container > .social-info-about > div > .social-text > p{
+  font-size: 18px;
+  color: #808ca6;
+}
 
 
 
