@@ -1064,6 +1064,7 @@ button.sub-button {
 .footer-container > .social-info-about > div > .social-icons {
   display: flex;
   flex-direction: row;
+  gap: 20px;
 }
 
 .footer-container > .social-info-about > div > .social-icons img {
@@ -1078,6 +1079,25 @@ button.sub-button {
 .footer-container > .social-info-about > div > .social-text > p{
   font-size: 18px;
   color: #808ca6;
+}
+
+/* SECTION RECAPTCHA */
+
+.recaptcha {
+  padding: 10px 50px;
+  text-align: center;
+}
+
+.recaptcha label {
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.Copryrigth {
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 300;
 }
 
 
