@@ -8,16 +8,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/tablet.css" />
     <title>Document</title>
 </head>
 <body>
 
     <header>
-        <div class="container container_scrolldown menu-black-background">
+        <div class="container container-tablet container_scrolldown menu-black-background">
+          <div class="header">
             <div class="logo">
-                <img src="images/logo.svg" alt="logo">
+                <img src="images/logo.svg" class="img-logo" alt="logo">
                 <div class="nav-toggle" id="navToggle">
                 <i class="fas fa-bars"></i>
+                </div>
             </div>
             </div>
             <nav>
@@ -28,15 +31,15 @@
                 <li><a href="#">Contact</a></li>
                 <button type="submit" class="contact1" id="contact1">Get in touch</button>
             </nav>
-            
+        </div>
         </div>
     </header>
     
     <!------------------- MAIN HEADER ------------------------------------------------------------------------------------------------>
-    <section id="main" class="main">
-      <div class="main-container">
-          <div class="main-block">
-          <h1>Revolution Indentification</h1>
+    <section id="main" class="main main-tablet">
+      <div class="main-container main-container-tablet">
+          <div class="main-block main-block-tablet">
+          <h1>Revolutionizing Identification</h1>
           <div>
           <p>
             Whether you want to provide seamless customer onboarding, remove
@@ -91,11 +94,13 @@
                     Conversion Rates
                 </p>
                 </div>
+              </div>
                 <div class="hr"></div>
+                <div class="second_products">
                 <div>
-                    <img src="images/quick_easy_integrations.svg" alt="">
+                    <img src="images/quick_easy_integrations.svg" class="images" alt="">
                 <p>
-                    Quick and Integrations
+                    Quick and Easy
                 <br>
                     Integrations
                 </p>
@@ -109,8 +114,10 @@
                     Attemps Prevention
                 </p>
                 </div>
+              </div>
             </div>
-        </div>
+        
+        
         <hr>
          
         <!---------- INDENTITY VERIFICATION ------------------------------------------------------------------------------------------->
@@ -153,7 +160,7 @@
          <!---------- SCREENING --------------------------------------------------------------------------------------------------------->
          <div id="screening" class="video-screen">
              <div>
-                 <div class="video">
+                 <div class="video-playing">
                      <img src="images/eli_aml.jpg" alt="">
                  </div>
                  <div class="text_video">
@@ -190,7 +197,7 @@
          <!---------- UNIVERSAL LOGIN ------------------------------------------------------------------------------------------------->
          <div id="universal_login" class="universal_login">
              <div>
-            <div class="video">
+            <div class="video-universal">
                 <video autoplay loop src="video/3.mp4"></video>
             </div>
             <div class="text_video">
@@ -229,7 +236,7 @@
         <!----------------------------- END TRACKING ACCESS CONTROL ------------------------------------------------------------------->
         <div id="tracking_access_control" class="tracking_access_control">
              <div>
-                 <div class="video">
+                 <div class="video-tracking">
                      <video src="./video/2.mp4"></video>
                  </div>
              <div class="text_video">
@@ -553,7 +560,7 @@
           <section id="contact-me" class="contact-me">
               <h2>Contact</h2>
             <form action="php/contact-me.php">
-              <div class="contact-input">
+              <div class="contact-input contact-input-tablet">
 
                 <div class="contact-left">
                   <h2>
@@ -570,7 +577,7 @@
                     <label>
                       Your Message
                     </label>
-                    <textarea name="message-form" id rows="6" placeholder="Type your message here..." required>
+                    <textarea name="message-form" placeholder="Type your message here..." rows="6"  required>
                     </textarea>
                   </div>
 
@@ -586,7 +593,7 @@
               </div>
             </div>
             
-              <div class="contact-right">
+              <div class="contact-right contact-right-tablet">
                 <div>
                   <label>First Name</label>
                   <input name="FirstName" type="text" placeholder="First Name">
@@ -597,7 +604,7 @@
                   <input name="LastName" type="text" placeholder="Last Name" />
                 </div>
 
-              <div class="dropdown-list">
+              <div class="dropdown-list dropdown-tablet">
                 <label>Your Country</label>
               <div>
                 <select name="Your_Contry_Code" required>
@@ -680,7 +687,7 @@
           </div>
           </div>
 
-          <div class="result">
+          <div class="result result-tablet">
             <div class="content-form">
             </div>
 

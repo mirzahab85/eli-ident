@@ -9,6 +9,7 @@
 
 body,html {
   /* background-color: #e1d9d5; */
+  overflow: auto;
 
 }
 
@@ -66,7 +67,7 @@ hr {
   position: fixed;
   width: 100%;
   height: 8%;
-  z-index: 99;
+  z-index: 999;
   /* justify-content: space-between; */
   align-items: center;
   /* max-width: 1600px; */
@@ -84,8 +85,10 @@ hr {
     background: rgb(0 0 0 / 30%);
 }
 
-.container > .logo > img {
-  width: 20%;
+.container > .header > .logo > img {
+  width: min(10vh, 100px);
+  display: flex;
+  align-items: flex-end;
 }
 
 /* NAVIGATION MENU */
@@ -130,35 +133,36 @@ li a {
 /* SECTION MAIN */
 
 .main {
-  display: flex;
-  align-items: flex-end;
-  height: 1100px;
-  background: url("../images/background.png");
+  height: 1200px;
+  background-image: url("../images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  opacity: 1;
+  padding: 45px 10px;
 }
 
 .main-container {
   position: relative;
-  border: 1px solid #ffffff;
-  margin: 0 1.8rem 1rem;
-  width: 100%;
-  border-radius: 11px;
+  
 }
 
 .main-container .main-block {
-  position: initial;
-  display: flex;
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  background: rgba(0, 0, 0, 0.12);
+  border: 1px solid #ffffff;
   backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 24px;
+  top: 281px;
+  right: 0;
+  padding: 57px;
+  color: white;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
-  width: 100%;
-  background-size: rgba(0, 0, 0, 0.12);
-  padding: 50px;
 }
 
 .main-container .main-block h1 {
@@ -169,7 +173,6 @@ li a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 30px;
 }
 
 .main-container .main-block label {
@@ -221,12 +224,22 @@ button.contact2 {
 
 .solutions .item_products .first_products {
   padding: 0px;
-  width: 30%;
+  width: 25%;
+  gap: 50px;
+  
+}
+.solutions .item_products .second_products {
+  padding: 0px;
+  width: 25%;
   gap: 50px;
   
 }
 
 .solutions .item_products .first_products p {
+  text-align: center;
+  padding: 10px 0 10px 0;
+}
+.solutions .item_products .second_products p {
   text-align: center;
   padding: 10px 0 10px 0;
 }
@@ -670,7 +683,7 @@ button.contact3 {
 
 .about-hourglass > div.hourglass-time > div.hr-underlined{
   margin: 20px 0;
-  border: 2px solid white;
+  border: 1px solid white;
   background: white;
   height: 100%;
 }
@@ -879,6 +892,7 @@ button.contact3 {
 .contact-me > form > .result > .submit {
   margin-bottom: 20px;
   display: flex;
+  
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -887,6 +901,7 @@ button.contact3 {
 
 .contact-me > form > .result button {
   width: 210px;
+
   
 }
 
@@ -916,15 +931,15 @@ button.sub-button {
   background: #f4f7ff;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 767px) {
 .footer-container > .software-developer {
-    width: 90%;
+    width: 100%;
 }}
 
 .footer-container > .software-developer {
   position: absolute;
   top: -154px;
-  left: 25px;
+  left: 0px;
   right: 0;
   background: #00a8ee;
   height: 290px;

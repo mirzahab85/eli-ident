@@ -1,9 +1,296 @@
+/* TABLET PAGE */ 
+
+
 @media only screen and (max-width: 767px) {
+.main-container {
+    display: flex;
+    position: relative;
+    top: 38px;
+    left: 0px;
+    right: 520px;
+    display: flex;
+    height: 1100px;
+    align-items: flex-end;
+}
 
+.main-container > .main-block {
+    position: initial;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+}
 
+.main-container > .main-block h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
 
+.main-container  .main-block p {
+    font-size: 15px;
+}
 
+}
 
+@media only screen and (min-width: 767px) {
+    .solutions {
+    margin: 0 auto;
+    padding: 120px 0 105px 0;
+    max-width: 767px;
+}
+.solutions > .solutions_text {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.solutions > .item_products > .first_products {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    margin-left: -335px;
+    gap: 28px;  
+}
+.solutions > .item_products > .second_products {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 66px;
+    margin-left: -103px;
+    gap: 28px;  
+}
+.solutions .item_products .first_products p {
+    margin-top: -58px;   
+}
+.solutions .item_products .second_products p {
+    margin-top: -56px;   
+}
 
+.solutions > .item_products > div > div:nth-child(2) {
+    width: 75px;
+    height: 2.5px;
+    background: #011e58;
+    gap: 50px;
+    margin: 102px auto;
+}
+.solutions > .item_products > div > div:nth-child(4) {
+    width: 75px;
+    height: 2.5px;
+    background: #011e58;
+    gap: 50px;
+    margin: 102px auto;
+}
+
+.video-play {
+    margin-bottom: 0;
+}
+
+.video-play > div {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    gap: 50px;
+}
+
+.video-play > div .video {
+    height: 308px;
+    width: 550px;
+    position: relative;
+    border-radius: 20px;
+}
+
+.video-play > div .text_video {
+    width: 100%;
+    padding: 0 102px 120px;
+}
+
+.video-screen {
+    margin-bottom: 150px;
+}
+
+.video-screen > div {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.video-screen > div .video-playing {
+    
+    width: 550px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.video-screen > div .text_video {
+    padding: 0 120px 8px;
+}
+
+.universal_login {
+    margin-bottom: 150px;
+}
+.universal_login > div {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+
+}
+
+.universal_login > div .video-universal {
+    width: 550px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.universal_login > div .text_video {
+    width: 100%;
+    padding: 0 91px 120px;
+}
+
+.tracking_access_control {
+    margin-bottom: 150px;
+    margin-top: -106px;
+}
+
+.tracking_access_control > div {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    gap: 40px;
+    position: relative;
+}
+
+.tracking_access_control > div .video-tracking {
+    width: 550px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.tracking_access_control > div .text_video {
+    width: 100%;
+    padding: 0 90px 0;
+} 
+
+.instries_key {
+    margin-top: -100px;
+}
+
+.instries_key > .industries-items {
+    display: grid;
+    grid-template-columns: repeat(2, 260px);
+}
+.video-management {
+    margin-bottom: 150px;
+}
+
+.video-management > div img {
+    height: 500px;
+}
+
+.video-management > div {
+    height: auto;
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+}
+
+.video-management > div .text-management > div img {
+    width: 100%;
+}
+
+.video-management > div.text-management {
+    width: 100%;
+    padding: 0 120px;
+}
+
+.barcode-integration {
+    margin-top: -120px;
+}
+
+.barcode-integration > div {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.barcode-integration > div .video-barcode img {
+    height: 500px;
+}
+
+.barcode-integration > div > .text-bardcode {
+    width: auto;
+    margin-top: -36px;
+    padding: 0 120px 120px;
+}
+
+.about-hourglass {
+    padding: 55px;
+    margin-top: -159px;
+}
+
+.about-hourglass > .hourglass-time {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    margin-bottom: 150px;
+}
+
+.about-hourglass > .hourglass-time > .hourglass-text {
+    gap: 20px;
+}
+
+.about-hourglass > .hourglass-time > .hr-underlined {
+    width: auto;
+    margin: 20px 0;
+}
+
+.about-hourglass > .hourglass-time > div.hourglass-time {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-around;
+    position: relative;
+}
+
+.about-hourglass > div.hourglass-time > div.hourglass-time > div.hourglases-svg-image  {
+    position: absolute;
+    top: -142%;
+    right: 30%;
+}
+
+.about-hourglass > .hourglass-key {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.contact-me > form > .contact-input-tablet > .contact-right-tablet{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 30px;
+}
+
+.contact-me > form > .contact-input-tablet > .contact-right-tablet > div {
     
 }
+
+.contact-me > form > .contact-input-tablet > .contact-right-tablet > .dropdown-tablet {
+    grid-column-start: 1;
+    grid-column-end: 3; 
+}
+
+.contact-me > form > .result  {
+    text-align: center;
+}
+
+}
+
+
